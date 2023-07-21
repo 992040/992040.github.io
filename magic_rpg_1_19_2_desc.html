@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles_minecraft_desc.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Майнкрафт модпаки</title>
 </head>
 
-<body background-image="bck_img.jpg">
-	<div id="c">
-		<a href="minecraft_modpacks.html"><button class="hd" id="hdhd">Magic RPG 1.19.2</button></a>
-		<button class="c_1"><p class="desc">Описание</p><p class="desc">Сборка модов с системой магии и элементами RPG. Конкретной цели не имеет и будет закрыта, когда всем надоест в неё играть.</p></button>
-		<button class="hd">Правила</button>
-		<button class="r_1"><p class="desc">1) Разрешён легкий гриф</p></button>
-		<button class="r_1"><p class="desc">2) Разрешено PVP (Нельзя забирать слишком много вещей)</p></button>
-		<button class="r_1"><p class="desc">3) Любые способы/механизмы для залагивания или краша сервера запрещены</p></button>
-		<button class="r_1"><p class="desc">4) Запрещён любой дюп</p></button>
-
-
+<body background-image="minecraft_bck.jpg">
+	<div id="main_content">
+		<a href="minecraft_modpacks.html"><button class="header_full" id="point">Magic RPG 1.19.2</button></a>
+		<button class="content"><p class="desc">Описание</p><p class="desc">Сборка модов с системой магии и элементами RPG. Конкретной цели не имеет и будет закрыта, когда всем надоест в неё играть.</p></button>
+		<button class="header_full">Правила</button>
+		<button class="rule"><p class="desc">1) Разрешён легкий гриф</p></button>
+		<button class="rule"><p class="desc">2) Разрешено PVP (Нельзя забирать слишком много вещей)</p></button>
+		<button class="rule"><p class="desc">3) Любые способы/механизмы для залагивания или краша сервера запрещены</p></button>
+		<button class="rule"><p class="desc">4) Запрещён любой дюп</p></button>
 	</div>
 </body>
 </html>
@@ -24,123 +23,7 @@
 	html{
 		background-color: black;
 		background-attachment: fixed;
-		background-image: url("bck_img.jpg");
-	}
-	p{
-		font-size:20px;
-
-	}
-	body{
-		padding: 0px;
-		margin: 0px;
-	}
-	@media screen and (min-width:1101px){
-		#c{
-			display: inline-block;
-			margin-left: 15%;
-			width: 70%;
-			height: 75%;
-			background-color: none;
-			padding: 0px;
-		}
-
-		.c_1{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 100%;
-			height: 200px;
-			background-color: #42c958;
-			display: inline-block;
-			border-color: #42b958;
-			border-width: 5px;
-			font-size: 20px;
-
-		}
-		.r_1{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 100%;
-			height: 100px;
-			background-color: #42c958;
-			display: inline-block;
-			border-color: #42b958;
-			border-width: 5px;
-			font-size: 20px;
-
-		}
-	}
-	@media screen and (max-width:1100px){
-		#c{
-			width: 100%;
-			height: 75%;
-			background-color: none;
-			padding: 0px;
-		}
-		.c_1{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 100%;
-			height: 270px;
-			background-color: #42c958;
-			display: inline-block;
-			border-color: #42b958;
-			border-width: 5px;
-			font-size: 1px;
-		
-		}
-		.r_1{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 100%;
-			height: 200px;
-			background-color: #42c958;
-			display: inline-block;
-			border-color: #42b958;
-			border-width: 5px;
-			font-size: 20px;
-
-		}
-	}
-
-
-	a{
-		margin: 0px;
-		text-decoration: none;
-		font-size: 20px;
-		color:black;
-	}
-	button:active{
-		padding-top: 10px;
-		padding-left: 10px;
-	}
-
-	.make_round{
-		border-radius: 45px;
-	}
-	.hd{
-		height:75px;
-		margin: 0px;
-		font: comic_sans;
-		display: inline-block;
-		width: 100%;
-		font-size: 48px;
-		margin: 0px;
-		font: comic_sans;
-		float:left	;
-		text-align: center;
-		background-color: #ffffff;
-		border-color: #ffefff;
-		border-width: 5px;
-	}
-	#hdhd{
-		cursor: pointer;
-	}
-	.desc{
-		font-size: 18px;
+		background-image: url("minecraft_bck.jpg");
 	}
 </style>
 

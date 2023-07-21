@@ -1,23 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="styles_mains.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Майнкрафт модпаки</title>
 </head>
 
-<body background-image="bck_img.jpg">
-	<div id="c">
-		<a href="index.html"><button class="hd">Майнкрафт модпаки</button></a>
+<body background-image="minecraft_bck.jpg">
+	<div id="main_content">
+		<a href="index.html"><button class="header_full">Майнкрафт модпаки</button></a>
 		<button id="ppp1">Активная</button>
 		<button id="ppp2">Создаётся</button>
 		<button id="ppp3">Ожидает</button>
 		<button id="ppp4">Заброшено</button>
-		<div class="nnn"><a href="create_1_19_2_modpack.html"><button id="i_1" class="s_c"><img height="100%" src="pic3.png"><button id="i_1" class="c_c">Выживание с Create 1.19.2</button></a><a href="create_1_19_2_desc.html"><button id="i_1" class="s_c">Описание и правила</button></a></div>
-		<div class="nnn"><a href="magic_rpg_1_19_2_modpack.html"><button id="i_2" class="s_c"><img height="100%" src="pic3.png"><button id="i_2" class="c_c">Magic RPG 1.19.2</button></a><a href="magic_rpg_1_19_2_desc.html"><button id="i_2" class="s_c">Описание и правила</button></a></div>
-		<div class="nnn"><a href="create_1_18_2_modpack.html"><button id="i_3" class="s_c"><img height="100%" src="pic3.png"><button id="i_3" class="c_c">Выживание с Create 1.18.2</button></a><a href="create_1_18_2_desc.html"><button id="i_3" class="s_c">Описание и правила</button></a></div>
+		<button id="ppp5">Пройдено</button>
+		<a href="how_to_download_modpacks.html"><button class="header_full" id="point">Как скачать?</button></a>
 
+		<div class="horizontal_container"><a href="magic_rpg_1_19_2_modpack.html"><button id="i_waiting" class="side_item_template"><img height="100%" src="mine_logo.png"><button id="i_waiting" class="center_item_template">Magic RPG 1.19.2</button></a><a href="magic_rpg_1_19_2_desc.html"><button id="i_waiting" class="side_item_template">Описание и правила</button></a></div>
 
+		<div class="horizontal_container"><a href="create_1_19_2_modpack.html"><button id="i_complete" class="side_item_template"><img height="100%" src="mine_logo.png"><button id="i_complete" class="center_item_template">Выживание с Create 1.19.2</button></a><a href="create_1_19_2_desc.html"><button id="i_complete" class="side_item_template">Описание и правила</button></a></div>
+
+		<div class="horizontal_container"><a href="create_1_18_2_modpack.html"><button id="i_forbidden" class="side_item_template"><img height="100%" src="mine_logo.png"><button id="i_forbidden" class="center_item_template">Выживание с Create 1.18.2</button></a><a href="create_1_18_2_desc.html"><button id="i_forbidden" class="side_item_template">Описание и правила</button></a></div>
 	</div>
 </body>
 </html>
@@ -25,170 +29,39 @@
 	html{
 		background-color: black;
 		background-attachment: fixed;
-		background-image: url("bck_img.jpg");
+		background-image: url("minecraft_bck.jpg");
 	}
-	p{
-		font-size:30px;
-
-	}
-	body{
-		padding: 0px;
-		margin: 0px;
-	}
-
-	/*#i_1{
+	#i_active{
 		background-color: #42c958;
 		border-color: #42b958;
+		color:black;
 
 	}
-	#i_2{
+	#i_making{
 		background-color: #f0f400;
 		border-color: #f0d400;
 		color:black;
 	}
-	#i_3{
-		background-color: #e20000;
-		border-color: #e21000;
-		color:black;
-	}*/
-
-	#i_1{
-		background-color: #ff7f00;
-		border-color: #ff6f00;
-		color:black;
-
-	}
-	#i_2{
+	#i_waiting{
 		background-color: #ff7f00;
 		border-color: #ff6f00;
 		color:black;
 	}
-	#i_3{
+	#i_forbidden{
 		background-color: #e20000;
 		border-color: #e21000;
 		color:black;
 	}
-
-	@media screen and (min-width:1101px){
-		#c{
-			display: inline-block;
-			margin-left: 15%;
-			width: 70%;
-			height: 75%;
-			background-color: none;
-			padding: 0px;
-		}
-
-	.s_c{
-		color: white;
-		float: left;
-		margin:0px;
-		width: 25%;
-		height: 100px;
-		display: inline-block;
-		border-width: 5px;
-		font-size: 20px;
-		cursor: pointer;
-	}
-	.c_c{
-		color: white;
-		float: left;
-		margin:0px;
-		width: 50%;
-		height: 100px;
-		display: inline-block;
-		border-width: 5px;
-		font-size: 20px;
-		cursor: pointer;
-
-	}
-	}
-	@media screen and (max-width:1100px){
-		#c{
-			width: 100%;
-			height: 75%;
-			background-color: none;
-			padding: 0px;
-		}
-		.c_c{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 50%;
-			height: 150px;
-			display: inline-block;
-			border-width: 5px;
-			font-size: 20px;
-			cursor: pointer;
-		
-		}
-		.s_c{
-			color: white;
-			float: left;
-			margin:0px;
-			width: 25%;
-			height: 150px;
-			display: inline-block;
-			border-width: 5px;
-			font-size: 20px;
-			cursor: pointer;
-		}
-	}
-
-
-	.nnn{
-		height: 100%;
-		margin: 0px;
-		font: comic_sans;
-		display: inline-block;
-		width: 100%;
-		font-size: 48px;
-		margin: 0px;
-		font: comic_sans;
-		float:left	;
-		text-align: center;
-		background-color: black;
-		font-size: 20px;
-	}
-
-	a{
-		margin: 0px;
-		text-decoration: none;
-		font-size: 20px;
+	#i_complete{
+		background-color: #ee00ff;
+		border-color: #ee10ff;
 		color:black;
-	}
-	button:active{
-		padding-top: 10px;
-		padding-left: 10px;
-	}
-
-	.make_round{
-		border-radius: 45px;
-	}
-	.hd{
-		height:75px;
-		margin: 0px;
-		font: comic_sans;
-		display: inline-block;
-		width: 100%;
-		font-size: 48px;
-		margin: 0px;
-		font: comic_sans;
-		float:left	;
-		text-align: center;
-		background-color: #ffffff;
-		border-color: #ffefff;
-		border-width: 5px;
-		cursor: pointer;
-	}
-	.desc{
-		font-size: 18px;
 	}
 	#ppp1{
 		height: 75px;
 		margin: 0px;
 		font: comic_sans;
-		width: 25%;
+		width: 20%;
 		font-size: 48px;
 		margin: 0px;
 		font: comic_sans;
@@ -204,7 +77,7 @@
 		height: 75px;
 		margin: 0px;
 		font: comic_sans;
-		width: 25%;
+		width: 20%;
 		font-size: 48px;
 		margin: 0px;
 		font: comic_sans;
@@ -220,7 +93,7 @@
 		height: 75px;
 		margin: 0px;
 		font: comic_sans;
-		width: 25%;
+		width: 20%;
 		font-size: 48px;
 		margin: 0px;
 		font: comic_sans;
@@ -236,7 +109,7 @@
 		height: 75px;
 		margin: 0px;
 		font: comic_sans;
-		width: 25%;
+		width: 20%;
 		font-size: 48px;
 		margin: 0px;
 		font: comic_sans;
@@ -247,5 +120,19 @@
 		border-width: 5px;
 		font-size: 20px;
 	}
+	#ppp5{
+		height: 75px;
+		margin: 0px;
+		font: comic_sans;
+		width: 20%;
+		font-size: 48px;
+		margin: 0px;
+		font: comic_sans;
+		float:left	;
+		text-align: center;
+		background-color: #ee00ff;
+		border-color: #ee10ff;
+		border-width: 5px;
+		font-size: 20px;
+	}
 </style>
-

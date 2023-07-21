@@ -1,0 +1,121 @@
+	html{
+		background-color: black;
+		background-attachment: fixed;
+		background-image: url("minecraft_bck.jpg");
+	}
+	p{
+		font-size:20px;
+
+	}
+	body{
+		padding: 0px;
+		margin: 0px;
+	}
+	@media screen and (min-width:1101px){
+		#main_content{
+			display: inline-block;
+			margin-left: 15%;
+			width: 70%;
+			height: 75%;
+			background-color: none;
+			padding: 0px;
+		}
+
+		.content{
+			color: black;
+			float: left;
+			margin:0px;
+			width: 100%;
+			height: 200px;
+			background-color: #42c958;
+			display: inline-block;
+			border-color: #42b958;
+			border-width: 5px;
+			font-size: 20px;
+
+		}
+		.rule{
+			color: black;
+			float: left;
+			margin:0px;
+			width: 100%;
+			height: 100px;
+			background-color: #42c958;
+			display: inline-block;
+			border-color: #42b958;
+			border-width: 5px;
+			font-size: 20px;
+
+		}
+	}
+	@media screen and (max-width:1100px){
+		#main_content{
+			width: 100%;
+			height: 75%;
+			background-color: none;
+			padding: 0px;
+		}
+		.content{
+			color: black;
+			float: left;
+			margin:0px;
+			width: 100%;
+			height: 270px;
+			background-color: #42c958;
+			display: inline-block;
+			border-color: #42b958;
+			border-width: 5px;
+			font-size: 1px;
+		
+		}
+		.rule{
+			color: black;
+			float: left;
+			margin:0px;
+			width: 100%;
+			height: 200px;
+			background-color: #42c958;
+			display: inline-block;
+			border-color: #42b958;
+			border-width: 5px;
+			font-size: 20px;
+
+		}
+	}
+
+
+	a{
+		margin: 0px;
+		text-decoration: none;
+		font-size: 20px;
+		color:black;
+	}
+	button:active{
+		padding-top: 10px;
+		padding-left: 10px;
+	}
+
+	.make_round{
+		border-radius: 45px;
+	}
+	.header_full{
+		height:75px;
+		margin: 0px;
+		font: comic_sans;
+		display: inline-block;
+		width: 100%;
+		font-size: 48px;
+		margin: 0px;
+		font: comic_sans;
+		float:left	;
+		text-align: center;
+		background-color: #ffffff;
+		border-color: #ffefff;
+		border-width: 5px;
+	}
+	#point{
+		cursor: pointer;
+	}
+	.desc{
+		font-size: 18px;
+	}
