@@ -1,0 +1,17 @@
+.content_sub_holder{
+	grid-template-columns: 1fr 9fr;
+}
+.content_left{
+	font-size: 2vw;
+}
+.content_middle{
+	font-size: 2vw;
+	margin-left: 5%;
+	text-align: left;
+}
+.content_sub_holder:hover{
+	cursor: default;
+}
+.p:hover{
+	cursor: pointer;
+}

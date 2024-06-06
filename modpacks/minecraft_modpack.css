@@ -1,0 +1,22 @@
+#content_holder{
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 1fr;
+	gap: 3%;
+}
+.content_holder{
+	margin-bottom: 2%;
+}
+.content_sub_holder{
+	grid-template-columns: 9fr 1fr;
+}
+.content_right{
+	font-size: 2vw;
+	margin-left: 5%;
+}
+.content_middle{
+	font-size: 2vw;
+	text-align: left;
+}
+.content_sub_holder:hover{
+	cursor: default;
+}
