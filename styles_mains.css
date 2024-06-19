@@ -81,7 +81,35 @@ img{
 
 
 
+@media(max-width:1200px){
+	.content_sub_holder{
+		border-radius: 10px;
+	}
+}
 
+@media(max-width:800px){
+	.page_name{
+		font-size: 4vw;
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	.header{
+		height: 10%;
+		grid-template-columns: repeat(3, auto);
+	}
+	.content_middle{
+		font-size: 7vw;
+	}
+	.content_sub_holder{
+		margin-top: 10%;
+	}
+	.item{
+		font-size: 4vw;
+	}
+	.content_sub_holder{
+		grid-template-columns: 1fr 2fr 1fr;
+	}
+}
 
 
 

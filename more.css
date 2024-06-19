@@ -12,3 +12,16 @@
 .content_sub_holder:hover{
 	cursor: default;
 }
+@media(max-width:800px){
+	.content_left{
+		font-size: 4vw;
+	}
+	.content_middle{
+		font-size: 4vw;
+		margin-left: 0px;
+	}
+	.content_sub_holder{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, auto);
+	}
+}
