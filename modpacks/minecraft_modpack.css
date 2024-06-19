@@ -20,3 +20,33 @@
 .content_sub_holder:hover{
 	cursor: default;
 }
+.no_columns{
+	grid-template-columns: 1fr;
+}
+li{
+	margin-left: 3%;
+}
+@media(max-width:800px){
+	.content_sub_holder{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(2, auto);
+	}
+	.content_right{
+		font-size: 4vw;
+		margin-left: 0px;
+		margin-top: 2%;
+	}
+	.content_middle{
+		font-size: 4vw;
+		text-align: left;
+	}
+	#content_holder{
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 1fr;
+		gap: 3%;
+	}
+	li{
+		margin-left: 6%;
+	}
+
+}
